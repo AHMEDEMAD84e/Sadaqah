@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صدقة - أذكار المسلم</title>
+    <link rel="stylesheet" href="Sadaqah.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="Logoo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo-link">صدقة</a>
+            <ul class="nav-links">
+                <li><a href="#" data-view="home" class="active">الرئيسية</a></li>
+                <li><a href="#" data-category="أذكار الصباح">أذكار الصباح</a></li>
+                <li><a href="#" data-category="أذكار المساء">أذكار المساء</a></li>
+                <li><a href="#" data-category="أذكار الصلاة">أذكار الصلاة</a></li>
+                <li><a href="#" data-view="quran">قرآن كريم</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="home-hero">
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <h1>أذكار المسلم</h1>
+                <p class="tagline">صدقة جارية عننا جميعاً</p>
+                <div class="hero-stats">
+                    <span><i class="fas fa-heart"></i> ألا بذكر الله تطمئن القلوب</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://raw.githubusercontent.com/nawafalqari/azkar-api/56df5127a55b4de2e92d99bf067d0d2ca08d297c/images/3d_quran.png" alt="3D Islamic Illustration" id="3d-hero-img">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <h2 id="current-category-title">أذكار الصباح</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="azkar-grid" id="azkar-container">
+            <!-- Azkar cards will be injected here -->
+            <div class="loading-spinner"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>صدقة جارية عني وعن جميع المسلمين الأحياء منهم والاموات</p>
+            <p class="copyright">  صدقه&copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="Sadaqah.js"></script>
+</body>
+</html>
